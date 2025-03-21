@@ -16,7 +16,7 @@ import androidx.navigation.toRoute
 import dagger.hilt.android.AndroidEntryPoint
 import dev.erad.tinyapps.ui.screen.anime.AnimeScreen
 import dev.erad.tinyapps.ui.screen.anime_list.TrendingAnimeListScreen
-import dev.erad.tinyapps.ui.theme.AnimeListTheme
+import dev.erad.tinyapps.ui.theme.TrendingAnimeTheme
 import kotlinx.serialization.Serializable
 
 @AndroidEntryPoint
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
             )
         )
         setContent {
-            AnimeListTheme {
+            TrendingAnimeTheme {
                 val navController = rememberNavController()
 
                 SharedTransitionLayout {

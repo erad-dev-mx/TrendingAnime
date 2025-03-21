@@ -49,7 +49,7 @@ private val DarkScheme = darkColorScheme(
 )
 
 @Composable
-fun AnimeListTheme(
+fun TrendingAnimeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
