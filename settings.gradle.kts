@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AnimeList"
+rootProject.name = "TrendingAnime"
 include(":app")
