@@ -20,7 +20,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -63,6 +62,7 @@ fun SharedTransitionScope.TrendingAnimeListScreen(
                             style = MaterialTheme.typography.displayLarge
                         )
                     }
+
                     items(animeList) { anime ->
                         AnimeCard(anime = anime, onClick = {
                             onAnimeClick(anime.attributes.posterImage.original, anime.id.toInt())

@@ -61,7 +61,7 @@ fun SharedTransitionScope.AnimeCard(
                 Row(
                     modifier = modifier
                         .background(
-                            color = MaterialTheme.colorScheme.secondaryContainer,
+                            color = MaterialTheme.colorScheme.primary,
                             shape = RoundedCornerShape(8.dp)
                         )
                         .padding(horizontal = 6.dp, vertical = 2.dp),
