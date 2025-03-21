@@ -19,10 +19,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import dev.erad.tinyapps.R
 import dev.erad.tinyapps.ui.screen.anime_list.composable.AnimeCard
 
 @OptIn(ExperimentalSharedTransitionApi::class)
@@ -57,9 +59,8 @@ fun SharedTransitionScope.TrendingAnimeListScreen(
                 ) {
                     item {
                         Text(
-                            text = "Trending",
-                            style = MaterialTheme.typography.displayLarge,
-                            fontWeight = FontWeight.Bold
+                            text = stringResource(R.string.title_trending),
+                            style = MaterialTheme.typography.displayLarge
                         )
                     }
                     items(animeList) { anime ->

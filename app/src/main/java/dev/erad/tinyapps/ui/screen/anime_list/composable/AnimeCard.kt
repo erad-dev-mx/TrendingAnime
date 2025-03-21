@@ -9,6 +9,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -23,7 +24,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -61,28 +61,36 @@ fun SharedTransitionScope.AnimeCard(
                 Row(
                     modifier = modifier
                         .background(
-                            color = Color(0xFFC4C7EB),
-                            shape = RoundedCornerShape(30.dp)
+                            color = MaterialTheme.colorScheme.secondaryContainer,
+                            shape = RoundedCornerShape(8.dp)
                         )
-                        .padding(horizontal = 6.dp, vertical = 2.dp)
+                        .padding(horizontal = 6.dp, vertical = 2.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
                     Icon(
                         imageVector = Icons.Rounded.Star,
                         contentDescription = null,
-                        tint = Color.Yellow
+                        tint = MaterialTheme.colorScheme.onPrimaryContainer
                     )
 
-                    Text(text = anime.attributes.averageRating.toString())
+                    Spacer(modifier = modifier.width(8.dp))
+
+                    Text(
+                        text = anime.attributes.averageRating.toString(),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
                 }
 
                 Text(
                     text = anime.attributes.canonicalTitle.toString(),
-                    style = MaterialTheme.typography.titleMedium
+                    style = MaterialTheme.typography.bodyLarge
                 )
 
                 Text(
                     text = anime.attributes.synopsis.toString(),
                     overflow = TextOverflow.Ellipsis,
+                    style = MaterialTheme.typography.bodyMedium,
                     maxLines = 2
                 )
             }

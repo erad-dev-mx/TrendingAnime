@@ -28,12 +28,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
+import dev.erad.tinyapps.R
 
 @Composable
 fun SharedTransitionScope.AnimeScreen(
@@ -61,7 +63,7 @@ fun SharedTransitionScope.AnimeScreen(
                     contentDescription = null,
                     modifier = modifier
                         .fillMaxWidth()
-                        .height(300.dp)
+                        .height(500.dp)
                         .sharedElement(
                             rememberSharedContentState(key = id),
                             animatedVisibilityScope = animatedVisibilityScope
@@ -80,7 +82,7 @@ fun SharedTransitionScope.AnimeScreen(
                     ) {
                         Text(
                             text = anime?.attributes?.canonicalTitle.toString(),
-                            style = MaterialTheme.typography.displaySmall,
+                            style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center
                         )
@@ -88,11 +90,11 @@ fun SharedTransitionScope.AnimeScreen(
                         Row {
                             Text(
                                 text = anime?.attributes?.startDate?.split("-")?.first().toString(),
-                                style = MaterialTheme.typography.titleMedium,
+                                style = MaterialTheme.typography.bodyLarge,
                                 fontWeight = FontWeight.Medium
                             )
 
-                            Text(text = " - ", modifier = modifier.padding(horizontal = 4.dp))
+                            Text(text = stringResource(R.string.middle_dash), modifier = modifier.padding(horizontal = 4.dp))
 
                             Row(
                                 horizontalArrangement = Arrangement.spacedBy(1.dp),
@@ -106,7 +108,7 @@ fun SharedTransitionScope.AnimeScreen(
 
                                 Text(
                                     text = anime?.attributes?.averageRating.toString(),
-                                    style = MaterialTheme.typography.titleMedium,
+                                    style = MaterialTheme.typography.bodyLarge,
                                     fontWeight = FontWeight.Medium
                                 )
                             }
@@ -116,14 +118,14 @@ fun SharedTransitionScope.AnimeScreen(
 
                         Column(horizontalAlignment = Alignment.Start) {
                             Text(
-                                text = "Synopsis",
+                                text = stringResource(R.string.title_synopsis),
                                 style = MaterialTheme.typography.titleMedium,
                                 fontWeight = FontWeight.Medium
                             )
 
                             Text(
                                 text = anime?.attributes?.synopsis.toString(),
-                                style = MaterialTheme.typography.bodyMedium,
+                                style = MaterialTheme.typography.bodySmall,
                                 fontWeight = FontWeight.Normal
                             )
                         }
@@ -133,7 +135,6 @@ fun SharedTransitionScope.AnimeScreen(
         }
 
         if (anime == null) {
-
             Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator()
             }

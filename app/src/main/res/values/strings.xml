@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TrendingAnime</string>
+    
+    <string name="title_trending">Trending</string>
+    <string name="title_synopsis">Synopsis</string>
+    <string name="middle_dash"> - </string>
 </resources>
