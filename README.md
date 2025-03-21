@@ -4,7 +4,7 @@
 
 TrendingAnime is an Android app that showcases trending and popular anime series. Built with Jetpack Compose and Material 3.
 
-![TrendingAnime](assets/tinyapps.png)
+![TinyApps](assets/tinyapps.png)
 
 :rocket: Part of __*[TinyApps](https://erad.dev/tinnyapps.html)*__ by __*[erad.dev](https://erad.dev/)*__
 
