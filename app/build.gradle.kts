@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.erad.tinyapps"
+    namespace = "erad.tinyapps.trendinganime"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "dev.erad.tinyapps"
+        applicationId = "erad.tinyapps.trendinganime"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
