@@ -3,7 +3,7 @@ package dev.erad.tinyapps.ui.theme
 import androidx.compose.ui.graphics.Color
 
 // My color scheme
-val darkSlateGray = Color(0xFF2F3542)
+val balticSea = Color(0xFF3D3D3D)
 val radicalRed = Color(0xFFFF4757)
 val coral = Color(0xFFFF6348)
 val blue = Color(0xFF3742FA)
@@ -25,35 +25,35 @@ val onPrimaryLight = white
 val primaryContainerLight = radicalRed
 val onPrimaryContainerLight = white
 val secondaryLight = coral
-val onSecondaryLight = darkSlateGray
+val onSecondaryLight = balticSea
 val secondaryContainerLight = coral
-val onSecondaryContainerLight = darkSlateGray
+val onSecondaryContainerLight = balticSea
 val tertiaryLight = blue
-val onTertiaryLight = darkSlateGray
+val onTertiaryLight = balticSea
 val tertiaryContainerLight = blue
-val onTertiaryContainerLight = darkSlateGray
+val onTertiaryContainerLight = balticSea
 val errorLight = redErrorLight
 val onErrorLight = whiteOnErrorLight
 val errorContainerLight = redErrorContainerLight
 val onErrorContainerLight = whiteOnErrorContainerLight
 val backgroundLight = white
-val onBackgroundLight = darkSlateGray
+val onBackgroundLight = balticSea
 
 val primaryDark = radicalRed
 val onPrimaryDark = white
 val primaryContainerDark = radicalRed
 val onPrimaryContainerDark = white
 val secondaryDark = coral
-val onSecondaryDark = darkSlateGray
+val onSecondaryDark = balticSea
 val secondaryContainerDark = coral
-val onSecondaryContainerDark = darkSlateGray
+val onSecondaryContainerDark = balticSea
 val tertiaryDark = green
-val onTertiaryDark = darkSlateGray
+val onTertiaryDark = balticSea
 val tertiaryContainerDark = green
-val onTertiaryContainerDark = darkSlateGray
+val onTertiaryContainerDark = balticSea
 val errorDark = redErrorDark
 val onErrorDark = redOnErrorDark
 val errorContainerDark = redErrorContainerDark
 val onErrorContainerDark = whiteOnErrorContainerDark
-val backgroundDark = darkSlateGray
+val backgroundDark = balticSea
 val onBackgroundDark = white

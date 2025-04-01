@@ -2,7 +2,7 @@
 
 ![TrendingAnime](assets/main.png)
 
-TrendingAnime is an Android app that showcases trending and popular anime series. Built with Jetpack Compose and Material 3.
+TrendingAnime is an Android app that showcases trending and popular anime series.
 
 ![TinyApps](assets/tinyapps.png)
 
@@ -24,7 +24,7 @@ TrendingAnime is an Android app that showcases trending and popular anime series
 - MVVM
 - Retrofit
 - Hilt
-- Coil for image loading
+- Coil for images
 
 ## :running: Installation
 
