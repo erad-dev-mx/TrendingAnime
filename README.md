@@ -1,6 +1,6 @@
 # TrendingAnime
 
-![TrendingAnime](assets/main.png)
+![TrendingAnime](assets/main.svg)
 
 TrendingAnime is an Android app that showcases trending and popular anime series.
 
