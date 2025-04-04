@@ -4,7 +4,7 @@
 
 TrendingAnime is an Android app that showcases trending and popular anime series.
 
-![TinyApps](assets/tinyapps.png)
+![TinyApps](assets/tinyapps.svg)
 
 :rocket: Part of __*[TinyApps](https://erad.dev/tinyapps.html)*__ by __*[erad.dev](https://erad.dev/)*__
 
